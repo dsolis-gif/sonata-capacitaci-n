@@ -291,7 +291,7 @@ body{font-family:var(--font-main);background:var(--navy);color:var(--white);min-
     <button class="tab-btn" onclick="switchTab('b1',this)"><span class="tab-num">1</span> Claridad Operativa</button>
     <button class="tab-btn" onclick="switchTab('b2',this)"><span class="tab-num">2</span> Roleplay de Ventas</button>
     <button class="tab-btn" onclick="switchTab('b3',this)"><span class="tab-num">3</span> Esquema Comercial</button>
-    <button class="tab-btn" onclick="switchTab('b4',this)"><span class="tab-num">4</span> Motivación Primer Mes</button>
+    <button class="tab-btn" onclick="switchTab('b4',this)"><span class="tab-num">4</span> Resultados Primer Mes</button>
     <button class="tab-btn" onclick="switchTab('b5',this)"><span class="tab-num">5</span> Siguientes Pasos</button>
   </div>
 </nav>
@@ -430,10 +430,10 @@ body{font-family:var(--font-main);background:var(--navy);color:var(--white);min-
       <div class="timeline-header">
         <div style="display:flex;align-items:center;gap:10px;">
           <span class="badge badge-warn">Motivación</span>
-          <span class="timeline-name">Motivación y Primer Mes</span>
+          <span class="timeline-name">Resultados Primer Mes</span>
         </div>
       </div>
-      <div class="timeline-objective">KPIs de la oficina, escenarios base · stretch · 200%, y el iPad para quien llegue al 200%.</div>
+      <div class="timeline-objective">KPIs de la oficina, escenarios base · stretch · 300%. Rifa de un iPad: 12 membresías (300%) te da 1 boleto, cada membresía adicional suma otro.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot">5</div>
@@ -641,7 +641,7 @@ body{font-family:var(--font-main);background:var(--navy);color:var(--white);min-
 <section id="tab-b4" class="tab-panel">
   <div class="block-header">
     <div class="block-num">4</div>
-    <div class="block-info"><h2>Motivación y Primer Mes</h2><p>KPIs · Por qué este mix · Escenarios · Premio</p></div>
+    <div class="block-info"><h2>Resultados Primer Mes</h2><p>KPIs · Escenarios · Premio</p></div>
   </div>
 
   <!-- KPI PRIMERO -->
@@ -716,15 +716,15 @@ body{font-family:var(--font-main);background:var(--navy);color:var(--white);min-
     </div>
     <div class="scenario-col super-col">
       <div class="scenario-head">
-        <div class="scenario-tag">Escenario premio · 200%</div>
-        <div class="scenario-name">50 membresías la oficina</div>
+        <div class="scenario-tag">Escenario premio · 300%</div>
+        <div class="scenario-name">12 membresías por banquero</div>
       </div>
       <div class="scenario-body">
-        <div class="scenario-row"><span class="s-label">Mix estimado (70/30)</span><span class="s-value white">35 Prime · 15 Plus</span></div>
-        <div class="scenario-row"><span class="s-label">Ingreso Prime (35×$2,900)</span><span class="s-value gold">$101,500</span></div>
-        <div class="scenario-row"><span class="s-label">Ingreso Plus (15×$2,400)</span><span class="s-value gold">$36,000</span></div>
-        <div class="scenario-row"><span class="s-label">vs. base</span><span class="s-value gold">+148%</span></div>
-        <div class="scenario-row divider-row"><span class="s-label">Ingreso oficina</span><span class="s-value gold big">$137,500</span></div>
+        <div class="scenario-row"><span class="s-label">Prime (9 × 5)</span><span class="s-value white">45 membresías</span></div>
+        <div class="scenario-row"><span class="s-label">Plus (3 × 5)</span><span class="s-value white">15 membresías</span></div>
+        <div class="scenario-row"><span class="s-label">Total</span><span class="s-value white">60 membresías</span></div>
+        <div class="scenario-row"><span class="s-label">Puntos por banquero</span><span class="s-value gold">21 pts</span></div>
+        <div class="scenario-row divider-row"><span class="s-label">Ingreso oficina</span><span class="s-value gold big">$166,500</span></div>
       </div>
     </div>
   </div>
@@ -732,10 +732,27 @@ body{font-family:var(--font-main);background:var(--navy);color:var(--white);min-
   <!-- PREMIO -->
   <div class="prize-banner">
     <div class="prize-icon">🏆</div>
-    <div>
-      <div class="prize-label">Premio — 200% de la meta</div>
-      <div class="prize-title">Rifa de un iPad entre todos los que lleguen al 200%</div>
-      <div class="prize-sub">Creemos que es un producto fácil de vender — ya lo vimos en Julio Verne. Queremos que Sonata haga mejores resultados que ese equipo. Quien llegue al 200% entra a la rifa.</div>
+    <div style="flex:1;">
+      <div class="prize-label">Premio — rifa de un iPad</div>
+      <div class="prize-title">12 membresías para entrar · cada una extra suma un boleto</div>
+      <div class="prize-sub" style="margin-bottom:14px;">Creemos que este producto es fácil de vender — ya lo vimos en Julio Verne. Queremos que Sonata haga mejores resultados. 12 membresías por banquero (300% de la meta) es el piso para entrar a la rifa. Cada membresía adicional te da un boleto extra.</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px;">
+        <div style="background:rgba(230,199,138,0.08);border:1px solid rgba(230,199,138,0.2);border-radius:8px;padding:12px 14px;text-align:center;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--grey-2);font-family:var(--font-mono);margin-bottom:4px;">Menos de 12 membresías</div>
+          <div style="font-size:15px;font-weight:700;color:var(--grey-2);">Sin boletos</div>
+          <div style="font-size:11px;color:var(--grey-2);margin-top:2px;">No aplica para la rifa</div>
+        </div>
+        <div style="background:rgba(230,199,138,0.12);border:1px solid rgba(230,199,138,0.35);border-radius:8px;padding:12px 14px;text-align:center;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-family:var(--font-mono);margin-bottom:4px;">Exactamente 12 · 300%</div>
+          <div style="font-size:22px;font-weight:800;color:var(--gold);font-family:var(--font-mono);">1 boleto</div>
+          <div style="font-size:11px;color:var(--grey-2);margin-top:2px;">Entras a la rifa</div>
+        </div>
+        <div style="background:rgba(74,184,138,0.08);border:1px solid rgba(74,184,138,0.3);border-radius:8px;padding:12px 14px;text-align:center;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--success);font-family:var(--font-mono);margin-bottom:4px;">Más de 12 membresías</div>
+          <div style="font-size:22px;font-weight:800;color:var(--success);font-family:var(--font-mono);">1 + extras</div>
+          <div style="font-size:11px;color:var(--grey-2);margin-top:2px;">+1 boleto por cada membresía adicional</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
